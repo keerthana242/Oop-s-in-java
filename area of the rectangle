@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Rectangle{
+    int l;
+    int b;
+    static int area(int l,int b){
+        return l * b;
+    }
+}
+public class Main{
+public static void main(String[] args){
+          Scanner sc = new Scanner(System.in);
+          Rectangle a1 = new Rectangle();
+          a1.l=sc.nextInt();
+          a1.b=sc.nextInt();
+          int result = Rectangle.area(a1.l,a1.b);
+          System.out.println("area of the rectangle is ="+ result);
+          
+    
+}
+
+}
