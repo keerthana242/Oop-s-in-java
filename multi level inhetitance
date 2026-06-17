@@ -1,0 +1,35 @@
+import java.util.*;
+class Parent{
+    public void display1(){
+        System.out.println("the");
+    }
+}
+
+class Child1 extends Parent{
+    public void display2(){
+        System.out.println("world");
+    }
+}
+
+class Child2 extends Child1{
+    public void display3(){
+        System.out.println("looks");
+    }
+}
+
+class Child3 extends Child2{
+    public void display4(){
+        System.out.println("beautyful");
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        Child3 obj = new  Child3();
+        obj.display1();
+        obj.display2();
+        obj.display3();
+        obj.display4();
+        
+    }
+}
